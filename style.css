@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    padding-bottom: 60px;
+    padding-top: 30px;
+
+}
+
+/* Header und Navigation */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #4CAF50;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Burger-Menü */
+#burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+/* Responsive Design für mobile Geräte */
+@media screen and (max-width: 600px) {
+
+    /* Burger-Menü Icon */
+    #burger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        font-size: 30px;
+        color: white;
+    }
+
+    /* Vollbild-Overlay für das Navigationsmenü */
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 128, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    nav ul.active {
+        transform: translateX(0);
+        /* Zeigt das Menü an */
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+    }
+}

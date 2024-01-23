@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - R. Asllani Gipsergeschäft GmbH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="Bilder/logo.png" alt="Logo" id="logo">
+            </a>
+            <nav>
+                <div id="burger-menu" onclick="toggleMenu()">☰</div>
+                <ul id="nav-list">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="ueber-uns.html">Über uns</a></li>
+                    <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Kontaktieren Sie uns</h1>
+    </main>
+
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function () {
+            document.getElementById('nav-list').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
