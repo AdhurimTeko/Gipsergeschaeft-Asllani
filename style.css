@@ -116,6 +116,28 @@ nav ul li a {
     }
 }
 
+/* Hauptinhalt */
+main {
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+main h1 {
+    color: #333;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+#gipsenImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Footer */
 footer {
     background-color: #333;
