@@ -156,6 +156,44 @@ th {
     color: white;
 }
 
+/*Referenzkarte*/
+.referenz-karte {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.referenz-bild {
+    width: 150px;
+    /* oder passende Größe */
+    height: 150px;
+    /* oder passende Größe */
+    object-fit: cover;
+    /* sorgt dafür, dass das Bild das Element voll ausfüllt */
+}
+
+.referenz-inhalt {
+    padding: 15px;
+}
+
+/* Responsives Design für die Referenzkarten */
+@media screen and (max-width: 600px) {
+    .referenz-karte {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .referenz-bild {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #333;
