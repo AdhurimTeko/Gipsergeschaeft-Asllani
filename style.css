@@ -170,9 +170,7 @@ th {
 
 .referenz-bild {
     width: 150px;
-    /* oder passende Größe */
     height: 150px;
-    /* oder passende Größe */
     object-fit: cover;
     /* sorgt dafür, dass das Bild das Element voll ausfüllt */
 }
@@ -201,7 +199,6 @@ footer {
     text-align: center;
     padding: 0.5em 0;
     position: fixed;
-    /* Fixiert den Footer am unteren Rand */
     bottom: 0;
     width: 100%;
 }
